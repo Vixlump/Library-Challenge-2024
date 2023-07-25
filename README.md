@@ -9,7 +9,7 @@ Install Programming Lanuages on Ubuntu:
           C: ```sudo apt-get install gcc```  
           Python: ```sudo apt-get install python3```  
 
-How to Compile Library Examples:
+How to Compile Library Examples: https://youtu.be/Kn4JIKQeOOU  
 
 Library Challenge Introduction Video:
 
