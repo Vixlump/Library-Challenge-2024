@@ -8,6 +8,7 @@ Install Programming Lanuages on Ubuntu:
           C++: ```sudo apt-get install g++```  
           C: ```sudo apt-get install gcc```  
           Python: ```sudo apt-get install python3```  
+Install Programming Languages on MacOS: https://youtu.be/0z-fCNNqfEg  
 
 How to Compile Library Examples: https://youtu.be/Kn4JIKQeOOU  
 
