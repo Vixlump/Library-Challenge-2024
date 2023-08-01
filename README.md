@@ -10,6 +10,6 @@ Install Programming Languages on MacOS: https://youtu.be/0z-fCNNqfEg
 
 How to Compile Library Examples: https://youtu.be/Kn4JIKQeOOU  
 
-Library Challenge Introduction Video: https://youtu.be/l1YRPEklv34
+Library Challenge Introduction Video: https://youtu.be/F_MRtEidph8   
 
 Library Challenge Overview:
