@@ -13,3 +13,5 @@ How to Compile Library Examples: https://youtu.be/Kn4JIKQeOOU
 Library Challenge Introduction Video: https://youtu.be/F_MRtEidph8   
 
 Library Challenge Overview:
+            Using the libraries provided in this repo make a piece of software of your choise that utilizes the libraries in unique and interesting ways.
+            Happy coding! -DNS
