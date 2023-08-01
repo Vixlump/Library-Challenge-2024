@@ -100,33 +100,29 @@ namespace vix {
 	    return result;
 	}
 
+	//Function to divide a positive integer string by a single-digit integer
 	std::string divide_string_by_digit(const std::string& num, int divisor, int& remainder) {
-	    if (divisor == 0) {
-		std::cout << "Error: Division by zero.\n";
-		remainder = 0;
-		return "";
-	    }
-
 	    std::string result;
 	    int idx = 0;
-	    int dividend = 0;
+	    int dividend = num[idx] - '0';
 
 	    while (idx < num.length()) {
-		dividend = dividend * 10 + (num[idx] - '0');
 		if (dividend < divisor) {
+		    idx++;
+		    dividend = dividend * 10 + (num[idx] - '0');
 		    result.push_back('0');
 		} else {
 		    result.push_back('0' + dividend / divisor);
 		    dividend = dividend % divisor;
+		    idx++;
 		}
-		idx++;
 	    }
 
 	    remainder = dividend;
 	    return result;
 	}
 
-
+	//Function to divide two positive integer strings
 	std::string divide_strings(const std::string& num1, const std::string& num2, std::string& remainder) {
 	    if (num2 == "0") {
 		std::cout << "Error: Division by zero.\n";
@@ -153,40 +149,12 @@ namespace vix {
 		idx++;
 	    }
 
-	    // Remove leading zeros from the result
+	    //Remove leading zeros from the result
 	    while (result.length() > 1 && result.front() == '0') {
 		result.erase(result.begin());
 	    }
 
 	    remainder = currentDividend;
 	    return result;
-	}
-	std::string long_division(std::string dividend, std::string divisor, std::string& remainder) {
-	    int dividendLen = dividend.length();
-	    int divisorLen = divisor.length();
-
-	    std::string quotient = "";
-
-	    int idx = 0;
-	    int tempDividend = dividend[idx] - '0';
-	    while (idx < dividendLen) {
-		while (tempDividend < std::stoi(divisor) && idx < dividendLen) {
-		    tempDividend = tempDividend * 10 + (dividend[++idx] - '0');
-		    quotient.push_back('0');
-		}
-		if (idx == dividendLen)
-		    break;
-
-		int tempQuotient = tempDividend / std::stoi(divisor);
-		quotient.push_back(tempQuotient + '0');
-		tempDividend = (tempDividend % std::stoi(divisor)) * 10 + dividend[++idx] - '0';
-	    }
-
-	    if (quotient.length() == 0)
-		quotient = "0";
-
-	    remainder = std::to_string(tempDividend);
-
-	    return quotient;
 	}
 }

@@ -22,7 +22,8 @@ int main() {
 
     //Division
     std::string quotient, remainder;
-    quotient = vix::divide_strings(num1, num2, remainder);
+    //quotient = vix::divide_strings(num1, num2, remainder);
+    quotient = vix::long_division(num1, num2, remainder);
     std::cout << "Divided Strings: " << quotient << ", Strings Remainder: " << remainder << std::endl;
 
     return 0;
